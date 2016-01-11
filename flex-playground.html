@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>弹性布局实验室</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="flex-playground-0.01.css">
+</head>
+<body>
+  <header>
+    <h2>弹性盒设置</h2>
+    <article class="flex-box-ctr">
+
+      <section class="flex-box-ctr__basic">
+      <h3>基本设置</h3>
+      
+      <section>
+      <label for="flex-box-ctr__basic-width" class="input-text-box">
+        <span>宽度</span>
+        <input id="flex-box-ctr__basic-width" type="text">
+      </label>
+
+      <label for="flex-box-ctr__basic-height" class="input-text-box">
+        <span>高度</span>
+        <input id="flex-box-ctr__basic-height" type="text" value="120vh">
+      </label>
+
+      <input id="flex-box-ctr__basic-set" type="button" value="设置">
+      </section>
+      </section>
+      
+      <section class="flex-box-ctr__jstf">
+        <h3>主轴上对齐</h3>
+
+        <section>
+        <label for="flex-box-ctr__jstf-start" class="radio-tags">
+          <span>靠前</span>
+          <input id="flex-box-ctr__jstf-start" name="box-jstf-radio" type="radio" value="flex-start">
+        </label>
+
+        <label for="flex-box-ctr__jstf-end" class="radio-tags">
+          <span>靠后</span>
+          <input id="flex-box-ctr__jstf-end" name="box-jstf-radio" type="radio" value="flex-end">
+        </label>
+
+        <label for="flex-box-ctr__jstf-center" class="radio-tags">
+          <span>靠中</span>
+          <input id="flex-box-ctr__jstf-center" name="box-jstf-radio" type="radio" value="center">
+        </label>
+
+        <label for="flex-box-ctr__jstf-between" class="radio-tags">
+          <span>前后</span>
+          <input id="flex-box-ctr__jstf-between" name="box-jstf-radio" type="radio" value="space-between"></label>
+
+        <label for="flex-box-ctr__jstf-around" class="radio-tags">
+          <span>分散</span>
+          <input id="flex-box-ctr__jstf-around" name="box-jstf-radio" type="radio" value="space-around"></label>
+        </section>
+      </section>
+
+      <section class="flex-box-ctr__xrsax">
+        <h3>侧轴上对齐</h3>
+        <section>
+        <label for="flex-box-ctr__xrsax-start" class="radio-tags">
+          <span>靠前</span>
+          <input id="flex-box-ctr__xrsax-start" name="box-xrsax-radio" type="radio" value="flex-start">
+        </label>
+
+        <label for="flex-box-ctr__xrsax-end" class="radio-tags">
+          <span>靠后</span>
+          <input id="flex-box-ctr__xrsax-end" name="box-xrsax-radio" type="radio" value="flex-end">
+        </label>
+
+        <label for="flex-box-ctr__xrsax-center" class="radio-tags">
+          <span>靠中</span>
+          <input id="flex-box-ctr__xrsax-center" name="box-xrsax-radio" type="radio" value="center">
+        </label>
+
+        <label for="flex-box-ctr__xrsax-baseline" class="radio-tags">
+          <span>基线</span>
+          <input id="flex-box-ctr__xrsax-baseline" name="box-xrsax-radio" type="radio" value="baseline"></label>
+
+        <label for="flex-box-ctr__xrsax-stretch" class="radio-tags">
+          <span>伸展</span>
+          <input id="flex-box-ctr__xrsax-stretch" name="box-xrsax-radio" type="radio" value="stretch"></label>
+        </section>
+
+      </section>
+
+      
+      <section class="flex-box-ctr__mainax">
+        <h3>对齐主轴</h3>
+
+        <section>
+        <label for="flex-box-ctr__mainax-start" class="radio-tags">
+          <span>靠前</span>
+          <input id="flex-box-ctr__mainax-start" name="box-mainax-radio" type="radio" value="flex-start">
+        </label>
+
+        <label for="flex-box-ctr__mainax-end" class="radio-tags">
+          <span>靠后</span>
+          <input id="flex-box-ctr__mainax-end" name="box-mainax-radio" type="radio" value="flex-end">
+        </label>
+
+        <label for="flex-box-ctr__mainax-center" class="radio-tags">
+          <span>靠中</span>
+          <input id="flex-box-ctr__mainax-center" name="box-mainax-radio" type="radio" value="center">
+        </label>
+
+        <label for="flex-box-ctr__mainax-between" class="radio-tags">
+          <span>分散</span>
+          <input id="flex-box-ctr__mainax-between" name="box-mainax-radio" type="radio" value="space-between">
+        </label>
+
+        <label for="flex-box-ctr__mainax-around" class="radio-tags">
+          <span>前后</span>
+          <input id="flex-box-ctr__mainax-around" name="box-mainax-radio" type="radio" value="space-around">
+        </label>
+
+        <label for="flex-box-ctr__mainax-stretch" class="radio-tags">
+          <span>伸展</span>
+          <input id="flex-box-ctr__mainax-stretch" name="box-mainax-radio" type="radio" value="stretch">
+        </label>
+        </section>
+      </section>
+    </article>
+
+    <h2>弹性条目设置</h2>
+    <article class="flex-item-ctr">
+      <section class="flex-item-ctr__basic">
+
+        <input id="add-new-flex-item" type="button" value="添加">
+      
+      <label for="flex-item-ctr__basic-width" class="input-text-box">
+        <span>宽度</span>
+        <input id="flex-item-ctr__basic-width" type="text" value="100px">
+      </label>
+
+      <label for="flex-item-ctr__basic-height" class="input-text-box">
+        <span>高度</span>
+        <input id="flex-item-ctr__basic-height" type="text" value="200px">
+      </label>
+      </section>
+    </article>
+  </header>
+  
+  <main class="content">
+  <h1> 弹性布局实验室 </h1>
+  <div class="playground"></div>
+  </main>
+
+  <script src="flex-playground-0.01.js"></script>
+</body>
+</html>
